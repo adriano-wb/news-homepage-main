@@ -78,11 +78,11 @@ hr {
 }
 
 .menu-list-aberto {
-	animation: slideMenuAbrir .6s linear forwards;
+	animation: slideMenuAbrir .4s ease-out forwards;
 }
 
 .menu-list-fechar {
-	animation: slideMenuFechar .6s linear forwards;
+	animation: slideMenuFechar .4 ease-in forwards;
 }
 
 @keyframes slideMenuAbrir {
