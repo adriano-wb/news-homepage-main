@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<title>Frontend Mentor | News homepage</title>		
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main class="container">
+			<header class="cabecalho">
+				<!-- Logomarca do site -->
+				<a href="#" class="cabecalho-logo">
+					<img src="assets/images/logo.svg" class="cabecalho-logo__img" alt="Logo marca do site acesse o início clicando aqui" />
+				</a>
+				
+				<!-- Menu principal -->
+				<nav class="menu">
+					<!-- Botão abre menu -->
+					<button type="button" class="menu-botao" id="btnAbrirMenu" aria-label="Botão para abrir menu de navegação">
+						<img src="assets/images/icon-menu.svg" class="menu-button__icon" alt="Icone de hamburguer para abrir menu de navegação">
+					</button>
+					
+					<!-- Menu lista de links de navegação -->
+					<div class="fundo-escuro-menu"></div>
+					<ul class="menu-list">
+						<li class="menu-item fechar-menu">
+							<button type="button" class="fechar-menu-botao" id="btnFecharMenu">
+								<img src="assets/images/icon-menu-close.svg" class="menu-button__icon" alt="Icone de hamburguer para fechar menu de navegação">
+							</button>
+						</li>
+						<li class="menu-item"><a href="#" class="menu-item__link">Home</a></li>
+						<li class="menu-item"><a href="#" class="menu-item__link">New</a></li>
+						<li class="menu-item"><a href="#" class="menu-item__link">Popular</a></li>
+						<li class="menu-item"><a href="#" class="menu-item__link">Trending</a></li>
+						<li class="menu-item"><a href="#" class="menu-item__link">Categories</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<article class="c-artigo">
+				<div class="c-foto flex-display">
+					
+					<div class="artigo-main">
+						<div class="artigo-main-item">
+							<h1 class="artigo-main__titulo">The Bright Future of Web 3.0?</h1>
+						</div>
+						<div class="artigo-main-item">
+							<p class="artigo-main__texto">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+							<button type="button" class="artigo-main__botao" aria-label="Botão para ler mais sobre este artigo">
+								Read More
+							</button>
+						</div>
+					</div>
+					
+					<picture class="foto-apresentacao">
+						<source srcset="assets/images/image-web-3-desktop.jpg" media="(min-width: 475px)">
+						<img src="assets/images/image-web-3-mobile.jpg" class="foto-apresentacao__img responsive-img" alt="Imagem com figuras geométricas encaixáveis">
+					</picture>
+				</div>
+				
+				<aside class="c-lateral">
+					<article class="novos-posts">
+						<h2 class="novos-posts__titulo">New</h2>
+						
+						<a href="#" class="novo-secao">
+							<h3 class="novo-secao__titulo">Hydrogen VS Electric Cars</h3>
+							<p class="novo-secao__texto">Will hydrogen-fueled cars ever catch up to EVs?</p>
+						</a>
+						<hr>
+						<a href="#" class="novo-secao">
+							<h3 class="novo-secao__titulo">The Downsides of AI Artistry</h3>
+							<p class="novo-secao__texto">What are the possible adverse effects of on-demand AI image generation?</p>
+						</a>
+						<hr>
+						<a href="#" class="novo-secao">
+							<h3 class="novo-secao__titulo">Is VC Funding Drying Up?</h3>
+							<p class="novo-secao__texto">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+						</a>
+					</article>
+				</aside>
+			</article>
+			<article class="top-three">
+				<a href="#" class="three-content">
+					<div class="three-content-img">
+						<img src="assets/images/image-retro-pcs.jpg" class="responsive-img" alt="Imagem contendo computador de mesa antigo. Pequena thumbnail">
+					</div>
+					<div class="three-content-item">
+						<h4 class="three-content-titulo">
+							<span class="three-content-titulo__numero">01</span>
+							Reviving Retro PCs
+						</h4>
+						<p class="three-content-item__texto">What happens when old PCs are given modern upgrades?</p>
+					</div>
+				</a>
+				<a href="#" class="three-content">
+					<div class="three-content-img">
+						<img src="assets/images/image-top-laptops.jpg" class="responsive-img" alt="Imagem contendo foto de teclas de um notebook. Pequena thumbnail">
+					</div>
+					<div class="three-content-item">
+						<h4 class="three-content-titulo">
+							<span class="three-content-titulo__numero">02</span>
+							Top 10 Laptops of 2022
+						</h4>
+						<p class="three-content-item__texto">Our best picks for various needs and budgets.</p>
+					</div>
+				</a>
+				<a href="#" class="three-content">
+					<div class="three-content-img">
+						<img src="assets/images/image-gaming-growth.jpg" class="responsive-img" alt="Imagem contendo uma mão prestes a apanhar um controle de vídeo game. Thumbnail ilustrativa">
+					</div>
+					<div class="three-content-item">
+						<h4 class="three-content-titulo">
+							<span class="three-content-titulo__numero">03</span>
+							The Growth of Gaming
+						</h4>
+						<p class="three-content-item__texto">How the pandemic has sparked fresh opportunities.</p>
+					</div>
+				</a>
+			</article>
+		</main>
+		<footer class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Adriano</a>.
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
